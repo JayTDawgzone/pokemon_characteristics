@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>Pokemon Analysis by Terra Thompson</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="index.html"><img style="height: 80px; width: 80px;" src='https://img.pokemondb.net/sprites/x-y/normal/dedenne.png'>Pokemon Analysis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Summary<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="egg.html">Egg Groups</a>
+              <a class="dropdown-item" href="color.html">Color Groups</a>
+              <a class="dropdown-item" href="generations.html">Generations</a>
+              <a class="dropdown-item" href="types.html">Types</a>
+              <a class="dropdown-item" href="weight.html">Weight</a>
+              <a class="dropdown-item" href="shapes.html">Shapes</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <p></p>
+      <p></p>
+      <p></p>
+      <br>
+      <br>
+      <br>
+    </div>
+    <!-- <div class="container"> -->
+    <div class="row">
+
+      <div class="col-lg-2 col-md col-sm col-xl-2">
+        <img style="height: 250px; width: 250px;" src="https://static.pokemonpets.com/images/monsters-images-800-800/175-Togepi.png" alt="">
+      </div>
+
+
+    <div class="col-lg-10 col-md col-sm col-xl-10">
+
+
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="jumbotron">
+
+
+        <h1>Egg Group Analysis</h1>
+    </div>
+        <!-- <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p> -->
+
+    </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="row">
+      <div class="d-lg-flex flex-lg-equal w-100 my-md-3 pl-md-3">
+
+
+
+        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Base Stats Heat Map by Egg Group</h2>
+          </div>
+          <div class="bg-light shadow-lg" style="width: 100%; height: 80%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/egg_stat_matrix.png" alt="">
+            <p >Base stats are one of the underlying values that help determine</p><p>the growth rate for each of a Pokémon's six major stats:</p>
+            <br>
+            <p><strong>HP</strong></p>
+            <p><strong>Defense</strong></p>
+            <p><strong>Attack</strong></p>
+            <p><strong>Special Attack</strong></p>
+            <p><strong>Special Defense</strong></p>
+            <p><strong>Speed</strong></p>
+            <br>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="container">
+          <h1>Summary</h1>
+          <p>Each pokemon is assigned a color grouping in the Pokedex.</p>
+          <p>We can use this to group the pokemon by their color and observe the average base stats by color group.</p>
+          <h2>Overall Base Stats</h2>
+          <p>The heatmap shows that the overal stats by color group appear to be pretty well balanced.</p>
+          <p>Gray-colored pokemon seem to have very high Attack and Defense base stats but are lower in other stats</p>
+          <p>White pokemon have a higher base stat average.</p>
+          <p>Brown pokemon have a lower base stat average.</p>
+          <h2>Best Pokemon in Each Category</h2>
+          <p>The best pokemon in each color category appear to be mainly legendary pokemon.</p>
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+              <div class="my-3 p-3">
+                <h2 class="display-5">Total Base Stat Ranking</h2>
+                <p class="lead">Sum of All Base Stats</p>
+              </div>
+              <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 100%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/eggs_bar_total.png" alt="">
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    <div class="container">
+
+    </div>
+    <div class="container">
+    <h1>Top 5 Pokemon by Egg Group</h1>
+
+    <table class="table table-striped table-borderless">
+      <thead class ='thead-dark'>
+        <tr style="text-align: left;">
+                <th></th>
+                <th>pokemon_name</th>
+                <th>sprite</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <th>egg_group</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>water3</th>
+                <td>archeops</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png" width="60" ></td>
+                <td>567.0</td>
+              </tr>
+              <tr>
+                <th>water3</th>
+                <td>golisopod</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>water3</th>
+                <td>cloyster</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>water3</th>
+                <td>starmie</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png" width="60" ></td>
+                <td>520.0</td>
+              </tr>
+              <tr>
+                <th>water3</th>
+                <td>tentacruel</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" width="60" ></td>
+                <td>515.0</td>
+              </tr>
+              <tr>
+                <th>water2</th>
+                <td>wailord</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png" width="60" ></td>
+                <td>500.0</td>
+              </tr>
+              <tr>
+                <th>water2</th>
+                <td>relicanth</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png" width="60" ></td>
+                <td>485.0</td>
+              </tr>
+              <tr>
+                <th>water2</th>
+                <td>malamar</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png" width="60" ></td>
+                <td>482.0</td>
+              </tr>
+              <tr>
+                <th>water2</th>
+                <td>octillery</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png" width="60" ></td>
+                <td>480.0</td>
+              </tr>
+              <tr>
+                <th>water2</th>
+                <td>bruxish</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png" width="60" ></td>
+                <td>475.0</td>
+              </tr>
+              <tr>
+                <th>water1</th>
+                <td>lapras</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>water1</th>
+                <td>swampert</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>water1</th>
+                <td>blastoise</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>water1</th>
+                <td>feraligatr</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>water1</th>
+                <td>greninja</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>plant</th>
+                <td>tangrowth</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>plant</th>
+                <td>exeggutor</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>plant</th>
+                <td>serperior</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png" width="60" ></td>
+                <td>528.0</td>
+              </tr>
+              <tr>
+                <th>plant</th>
+                <td>meganium</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>plant</th>
+                <td>torterra</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>no-eggs</th>
+                <td>arceus</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png" width="60" ></td>
+                <td>720.0</td>
+              </tr>
+              <tr>
+                <th>no-eggs</th>
+                <td>dialga</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png" width="60" ></td>
+                <td>680.0</td>
+              </tr>
+              <tr>
+                <th>no-eggs</th>
+                <td>giratina-altered</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png" width="60" ></td>
+                <td>680.0</td>
+              </tr>
+              <tr>
+                <th>no-eggs</th>
+                <td>ho-oh</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png" width="60" ></td>
+                <td>680.0</td>
+              </tr>
+              <tr>
+                <th>no-eggs</th>
+                <td>lugia</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png" width="60" ></td>
+                <td>680.0</td>
+              </tr>
+              <tr>
+                <th>monster</th>
+                <td>tyranitar</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>monster</th>
+                <td>snorlax</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png" width="60" ></td>
+                <td>540.0</td>
+              </tr>
+              <tr>
+                <th>monster</th>
+                <td>aggron</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>monster</th>
+                <td>aurorus</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png" width="60" ></td>
+                <td>521.0</td>
+              </tr>
+              <tr>
+                <th>monster</th>
+                <td>lickilicky</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png" width="60" ></td>
+                <td>515.0</td>
+              </tr>
+              <tr>
+                <th>mineral</th>
+                <td>metagross</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>mineral</th>
+                <td>magnezone</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>mineral</th>
+                <td>porygon-z</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>mineral</th>
+                <td>vanilluxe</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>mineral</th>
+                <td>probopass</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>indeterminate</th>
+                <td>dusknoir</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>indeterminate</th>
+                <td>chandelure</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png" width="60" ></td>
+                <td>520.0</td>
+              </tr>
+              <tr>
+                <th>indeterminate</th>
+                <td>gallade</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png" width="60" ></td>
+                <td>518.0</td>
+              </tr>
+              <tr>
+                <th>indeterminate</th>
+                <td>gardevoir</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png" width="60" ></td>
+                <td>518.0</td>
+              </tr>
+              <tr>
+                <th>indeterminate</th>
+                <td>eelektross</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png" width="60" ></td>
+                <td>515.0</td>
+              </tr>
+              <tr>
+                <th>humanshape</th>
+                <td>electivire</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png" width="60" ></td>
+                <td>540.0</td>
+              </tr>
+              <tr>
+                <th>humanshape</th>
+                <td>magmortar</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png" width="60" ></td>
+                <td>540.0</td>
+              </tr>
+              <tr>
+                <th>humanshape</th>
+                <td>infernape</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png" width="60" ></td>
+                <td>534.0</td>
+              </tr>
+              <tr>
+                <th>humanshape</th>
+                <td>lucario</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png" width="60" ></td>
+                <td>525.0</td>
+              </tr>
+              <tr>
+                <th>humanshape</th>
+                <td>mienshao</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png" width="60" ></td>
+                <td>510.0</td>
+              </tr>
+              <tr>
+                <th>ground</th>
+                <td>slaking</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png" width="60" ></td>
+                <td>670.0</td>
+              </tr>
+              <tr>
+                <th>ground</th>
+                <td>arcanine</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" width="60" ></td>
+                <td>555.0</td>
+              </tr>
+              <tr>
+                <th>ground</th>
+                <td>rhyperior</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>ground</th>
+                <td>delphox</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png" width="60" ></td>
+                <td>534.0</td>
+              </tr>
+              <tr>
+                <th>ground</th>
+                <td>typhlosion</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png" width="60" ></td>
+                <td>534.0</td>
+              </tr>
+              <tr>
+                <th>flying</th>
+                <td>crobat</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>flying</th>
+                <td>noivern</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png" width="60" ></td>
+                <td>535.0</td>
+              </tr>
+              <tr>
+                <th>flying</th>
+                <td>decidueye</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png" width="60" ></td>
+                <td>530.0</td>
+              </tr>
+              <tr>
+                <th>flying</th>
+                <td>aerodactyl</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png" width="60" ></td>
+                <td>515.0</td>
+              </tr>
+              <tr>
+                <th>flying</th>
+                <td>braviary</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png" width="60" ></td>
+                <td>510.0</td>
+              </tr>
+              <tr>
+                <th>fairy</th>
+                <td>manaphy</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>fairy</th>
+                <td>florges</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png" width="60" ></td>
+                <td>552.0</td>
+              </tr>
+              <tr>
+                <th>fairy</th>
+                <td>togekiss</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png" width="60" ></td>
+                <td>545.0</td>
+              </tr>
+              <tr>
+                <th>fairy</th>
+                <td>blissey</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png" width="60" ></td>
+                <td>540.0</td>
+              </tr>
+              <tr>
+                <th>fairy</th>
+                <td>raichu</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" width="60" ></td>
+                <td>485.0</td>
+              </tr>
+              <tr>
+                <th>dragon</th>
+                <td>dragonite</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>dragon</th>
+                <td>garchomp</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>dragon</th>
+                <td>goodra</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>dragon</th>
+                <td>hydreigon</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>dragon</th>
+                <td>kommo-o</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png" width="60" ></td>
+                <td>600.0</td>
+              </tr>
+              <tr>
+                <th>ditto</th>
+                <td>ditto</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" width="60" ></td>
+                <td>288.0</td>
+              </tr>
+              <tr>
+                <th>bug</th>
+                <td>volcarona</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png" width="60" ></td>
+                <td>550.0</td>
+              </tr>
+              <tr>
+                <th>bug</th>
+                <td>flygon</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png" width="60" ></td>
+                <td>520.0</td>
+              </tr>
+              <tr>
+                <th>bug</th>
+                <td>yanmega</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png" width="60" ></td>
+                <td>515.0</td>
+              </tr>
+              <tr>
+                <th>bug</th>
+                <td>gliscor</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png" width="60" ></td>
+                <td>510.0</td>
+              </tr>
+              <tr>
+                <th>bug</th>
+                <td>shuckle</td>
+                <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png" width="60" ></td>
+                <td>505.0</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      </body>
+
+</html>

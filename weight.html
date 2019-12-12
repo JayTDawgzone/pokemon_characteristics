@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>Pokemon Analysis by Terra Thompson</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="index.html"><img style="height: 80px; width: 80px;" src='https://img.pokemondb.net/sprites/x-y/normal/dedenne.png'>Pokemon Analysis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Summary<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="egg.html">Egg Groups</a>
+              <a class="dropdown-item" href="color.html">Color Groups</a>
+              <a class="dropdown-item" href="generations.html">Generations</a>
+              <a class="dropdown-item" href="types.html">Types</a>
+              <a class="dropdown-item" href="weight.html">Weight</a>
+              <a class="dropdown-item" href="shapes.html">Shapes</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+        <div class="row">
+          <p></p>
+          <p></p>
+          <p></p>
+          <br>
+          <br>
+          <br>
+        </div>
+        <!-- <div class="container"> -->
+        <div class="row">
+
+          <div class="col-lg-2 col-md col-sm col-xl-2">
+            <img style="height: 250px; width: 300px;" src="https://i.pinimg.com/originals/97/70/9e/97709e91ad85e87f5be6ddf710a1aaa2.jpg" alt="">
+          </div>
+
+
+        <div class="col-lg-10 col-md col-sm col-xl-10">
+
+
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="jumbotron">
+
+
+            <h1>Pokemon Weight/Height Analysis</h1>
+        </div>
+            <!-- <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p> -->
+
+        </div>
+        </div>
+        <div class="row">
+          <div class="d-lg-flex flex-lg-equal w-100 my-md-3 pl-md-3">
+
+
+
+            <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
+              <div class="my-3 py-3">
+                <h2 class="display-5">Comparing Weight to Speed</h2>
+              </div>
+              <div class="bg-light shadow-lg" style="width: 100%; height: 80%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/weight_speed_scatter.png" alt="">
+
+              </div>
+
+            </div>
+
+
+
+
+            <div class="container">
+              <h1>Summary</h1>
+              <p>Each pokemon is assigned a color grouping in the Pokedex.</p>
+              <p>We can use this to group the pokemon by their color and observe the average base stats by color group.</p>
+              <h2>Overall Base Stats</h2>
+              <p>The heatmap shows that the overal stats by color group appear to be pretty well balanced.</p>
+              <p>Gray-colored pokemon seem to have very high Attack and Defense base stats but are lower in other stats</p>
+              <p>White pokemon have a higher base stat average.</p>
+              <p>Brown pokemon have a lower base stat average.</p>
+              <h2>Best Pokemon in Each Category</h2>
+              <p>The best pokemon in each color category appear to be mainly legendary pokemon.</p>
+              <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
+                <div class="my-3 py-3">
+                  <h2 class="display-5">Comparing Height to Speed</h2>
+                </div>
+                <div class="bg-light shadow-lg" style="width: 100%; height: 80%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/height_speed_scatter.png" alt="">
+
+                </div>
+
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+          </div>
+        <div class="container">
+
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>
