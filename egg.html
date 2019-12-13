@@ -51,12 +51,12 @@
     <!-- <div class="container"> -->
     <div class="row">
 
-      <div class="col-lg-2 col-md col-sm col-xl-2">
-        <img style="height: 250px; width: 250px;" src="https://static.pokemonpets.com/images/monsters-images-800-800/175-Togepi.png" alt="">
+      <div class="col-lg-1 col-md col-sm col-xl-2">
+        <img style="height: 250px; width: 250px; margin: relative;" src="https://static.pokemonpets.com/images/monsters-images-800-800/175-Togepi.png" class=" rounded mx-auto border mr-5 rounded border-info float-right" alt="">
       </div>
 
 
-    <div class="col-lg-10 col-md col-sm col-xl-10">
+    <div class="col-lg-11 col-md col-sm col-xl-10">
 
 
 
@@ -68,68 +68,63 @@
     <div class="jumbotron">
 
 
-        <h1>Egg Group Analysis</h1>
+        <h1>Pokemon Egg Group Analysis</h1>
     </div>
-        <!-- <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p> -->
 
     </div>
     </div>
-    <!-- </div> -->
-
-    <div class="row">
-      <div class="d-lg-flex flex-lg-equal w-100 my-md-3 pl-md-3">
-
-
-
-        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Base Stats Heat Map by Egg Group</h2>
-          </div>
-          <div class="bg-light shadow-lg" style="width: 100%; height: 80%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/egg_stat_matrix.png" alt="">
-            <p >Base stats are one of the underlying values that help determine</p><p>the growth rate for each of a Pokémon's six major stats:</p>
-            <br>
-            <p><strong>HP</strong></p>
-            <p><strong>Defense</strong></p>
-            <p><strong>Attack</strong></p>
-            <p><strong>Special Attack</strong></p>
-            <p><strong>Special Defense</strong></p>
-            <p><strong>Speed</strong></p>
-            <br>
-
-          </div>
-
-        </div>
-
-
-
 
         <div class="container">
+          <div class="row">
+
+          <div class="col-lg-6">
+            <h1 class='text-info text-center'>Heat Map of Base Stats by Pokemon Color Group.</h1>
+          <img src="Notebooks/images/egg_stat_matrix.png" alt="" class = "float-left rounded mx-auto border" style="margin: 00px 00px 40px 40px">
+          <div class="row-mx" >
+
+
+            <h1 class='text-info text-center' >Base Stats Total by Pokemon Color Group</h1>
+          <img src="Notebooks/images/eggs_bar_total.png" alt="" class = "float-left rounded mx-auto border" style="margin: 00px 00px 40px 40px">
+          </div>
+          </div>
+          <div class="col-lg-2">
+
+
+          </div>
+          <div class="col-lg-4">
           <h1>Summary</h1>
-          <p>Each pokemon is assigned a color grouping in the Pokedex.</p>
-          <p>We can use this to group the pokemon by their color and observe the average base stats by color group.</p>
-          <h2>Overall Base Stats</h2>
-          <p>The heatmap shows that the overal stats by color group appear to be pretty well balanced.</p>
-          <p>Gray-colored pokemon seem to have very high Attack and Defense base stats but are lower in other stats</p>
-          <p>White pokemon have a higher base stat average.</p>
-          <p>Brown pokemon have a lower base stat average.</p>
-          <h2>Best Pokemon in Each Category</h2>
-          <p>The best pokemon in each color category appear to be mainly legendary pokemon.</p>
-          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Total Base Stat Ranking</h2>
-                <p class="lead">Sum of All Base Stats</p>
-              </div>
-              <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 100%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/eggs_bar_total.png" alt="">
+          <p>Egg Groups are categories which determine which Pokemon are able to interbreed. They are based on biological traits of Pokemon Species. They generally allow Pokemon with similar biologies to breed.</p>
+          <p>Source: <a href='https://bulbapedia.bulbagarden.net/wiki/Egg_Group'>bulbapedia.bulbagarden.net</a></p>
+          <p>Averaging base stats by egg group will allow us to see what similar species outperform others.</p>
+          <div class="card border-info mb-3" style="max-width: 20rem;">
+              <div class="card-header">Base Stats</div>
+              <div class="card-body">
+              <h4 class="card-title">Pokemon Base Stats</h4>
+              <p class="card-text">Base stats are one of the underlying values that help determine the growth rate for each of a Pokémon's six major stats: </p>
+              <p class='card-text'><strong>HP, Defense, Attack, Special Attack, Special Defense, and Speed.</strong></p>
+
+              <p class = "card-text">They are a good indicator of the potential battle ability of the Pokemon.</p>
               </div>
             </div>
+
+          <h2>Overall Base Stats</h2>
+          <p>While most egg groups are balanced, others have abonormally high stats or abnormally low stats.</p>
+          <h2>Individual Base Stat Observations</h2>
+          <ul>
+          <li>There is only one pokemon in the 'ditto' category: <a href='https://bulbapedia.bulbagarden.net/wiki/Ditto_(Pok%C3%A9mon)'>Ditto</a>. It is the only pokemon that can breed with any pokemon, including Legendaries.</li>
+          <li>The 'no-egg' group has abnormally high stats because this is the group that all Legendary Pokemon are in.</li>
+          <li>Monster and Mineral Pokemon have extremely high defense but lower speed.</li>
+          </ul>
+          <h2>Best Egg Category</h2>
+          <p>If you sum all the base stat averages by category, 'no-eggs' has the highest total.</p>
+          <p>The 'no-eggs' group is assigned to powerful Pokemon to prevent players from breeding and obtaining more of them in a given game.</p>
+          <p>Because of this, it makes sense that they would have an overwhelmingly higher total.</p>
+
+          </div>
         </div>
         </div>
       </div>
+            </div>
       <div class="row">
       </div>
     <div class="container">

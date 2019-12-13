@@ -51,12 +51,12 @@
     <!-- <div class="container"> -->
     <div class="row">
 
-      <div class="col-lg-2 col-md col-sm col-xl-2">
-        <img style="height: 250px; width: 300px;" src="https://miro.medium.com/max/970/1*y0-zWEUPYi6TRuz0lC-0Ig.jpeg" alt="">
+      <div class="col-lg-1 col-md col-sm col-xl-2">
+        <img style="height: 200px; width: 250px; margin: relative;" src="https://miro.medium.com/max/970/1*y0-zWEUPYi6TRuz0lC-0Ig.jpeg" class=" rounded mx-auto border mr-5 rounded border-info float-right" alt="">
       </div>
 
 
-    <div class="col-lg-10 col-md col-sm col-xl-10">
+    <div class="col-lg-11 col-md col-sm col-xl-10">
 
 
 
@@ -68,68 +68,62 @@
     <div class="jumbotron">
 
 
-        <h1>Pokemon Generation Analysis</h1>
+        <h1>Pokemon Generation Group Analysis</h1>
     </div>
-        <!-- <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        <p class="text-secondary">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p> -->
 
     </div>
     </div>
-    <!-- </div> -->
-
-    <div class="row">
-      <div class="d-lg-flex flex-lg-equal w-100 my-md-3 pl-md-3">
-
-
-
-        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Base Stats Heat Map by Pokemon Generation</h2>
-          </div>
-          <div class="bg-light shadow-lg" style="width: 100%; height: 80%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/generation_stat_matrix.png" alt="">
-            <p >Base stats are one of the underlying values that help determine</p><p>the growth rate for each of a Pokémon's six major stats:</p>
-            <br>
-            <p><strong>HP</strong></p>
-            <p><strong>Defense</strong></p>
-            <p><strong>Attack</strong></p>
-            <p><strong>Special Attack</strong></p>
-            <p><strong>Special Defense</strong></p>
-            <p><strong>Speed</strong></p>
-            <br>
-
-          </div>
-
-        </div>
-
-
-
 
         <div class="container">
+          <div class="row">
+
+          <div class="col-lg-6">
+            <h1 class='text-info text-center'>Heat Map of Base Stats by Pokemon Generation Group.</h1>
+          <img src="Notebooks/images/generation_stat_matrix.png" alt="" class = "float-left rounded mx-auto border" style="margin: 00px 00px 40px 40px">
+          <div class="row-mx" >
+
+
+            <h1 class='text-info text-center' >Base Stats Total by Pokemon Generation Group</h1>
+          <img src="Notebooks/images/generations_bar_total.png" alt="" class = "float-left rounded mx-auto border" style="margin: 00px 00px 40px 40px">
+          </div>
+          </div>
+          <div class="col-lg-2">
+
+
+          </div>
+          <div class="col-lg-4">
           <h1>Summary</h1>
-          <p>Each pokemon is assigned a color grouping in the Pokedex.</p>
-          <p>We can use this to group the pokemon by their color and observe the average base stats by color group.</p>
-          <h2>Overall Base Stats</h2>
-          <p>The heatmap shows that the overal stats by color group appear to be pretty well balanced.</p>
-          <p>Gray-colored pokemon seem to have very high Attack and Defense base stats but are lower in other stats</p>
-          <p>White pokemon have a higher base stat average.</p>
-          <p>Brown pokemon have a lower base stat average.</p>
-          <h2>Best Pokemon in Each Category</h2>
-          <p>The best pokemon in each color category appear to be mainly legendary pokemon.</p>
-          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Total Base Stat Ranking</h2>
-                <p class="lead">Sum of All Base Stats</p>
-              </div>
-              <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 100%; border-radius: 21px 21px 0 0;"><img src="Notebooks/images/generations_bar_total.png" alt="">
+          <p>A generation is a grouping of the Pokémon games that separates them based on the Pokémon they include. In each generation, a new set of Pokémon, moves, and Abilities that did not exist in the previous generation are released.</p>
+          <p>Source: <a href='https://bulbapedia.bulbagarden.net/wiki/Generation'>bulbapedia.bulbagarden.net</a></p>
+          <p>To date, there are eight generations. However since the newest generation was released very recently (Nov 19), I won't be including it.</p>
+          <p>Averaging base stats by generations will show us if newer generation Pokemon are stronger than older generation Pokemon.</p>
+          <div class="card border-info mb-3" style="max-width: 20rem;">
+              <div class="card-header">Base Stats</div>
+              <div class="card-body">
+              <h4 class="card-title">Pokemon Base Stats</h4>
+              <p class="card-text">Base stats are one of the underlying values that help determine the growth rate for each of a Pokémon's six major stats: </p>
+              <p class='card-text'><strong>HP, Defense, Attack, Special Attack, Special Defense, and Speed.</strong></p>
+
+              <p class = "card-text">They are a good indicator of the potential battle ability of the Pokemon.</p>
               </div>
             </div>
+
+          <h2>Overall Base Stats</h2>
+          <p>Starting at Generation IV, the base stats of Pokemon appear to have increased significantly.</p>
+          <h2>Individual Base Stat Observations</h2>
+          <ul>
+          <li>While the other stat values appear to be increasing with the newer generations, Generation VI's Attack stat decreased. However, in the next generation, the Attack stat increased to its all time high of 84.</li>
+          <li>The Speed and HP stats have been relatively the same throughout the generations.</li>
+          </ul>
+          <h2>Best Generation Category</h2>
+          <p>If you sum all the base stat averages by category, Generation VII has the highest total.</p>
+          <p>We can expect the next generation of Pokemon to have higher base stats, or at least higher base stats than generations I-III</p>
+
+          </div>
         </div>
         </div>
       </div>
+            </div>
       <div class="row">
       </div>
     <div class="container">
