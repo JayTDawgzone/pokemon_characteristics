@@ -1,1 +1,1 @@
-# web-design-challenge
+# pokemon_characteristics
